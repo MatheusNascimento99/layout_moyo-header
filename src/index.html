@@ -1,4 +1,6 @@
+<!-- #region Meta -->
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,11 +14,47 @@
     />
     <title>Moyo header</title>
     <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="./style.css"
     />
   </head>
+
+  <!-- #endregion Meta -->
+
   <body>
-    <h1>Moyo header</h1>
+    <header class="header">
+      <a href="#">
+        <img class="logo"
+          src="./images//logo.png"
+          alt="logo moyo"
+        />
+      </a>
+
+      <nav >
+        <ul class="menu">
+          <li class="menu__link is-active">Apple</li>
+          <li class="menu__link">Samsung</li>
+          <li class="menu__link">Smartphones</li>
+          <li class="menu__link" data-qa="hover">Laptops & Computers</li>
+          <li class="menu__link">Gadgets</li>
+          <li class="menu__link">Tablets</li>
+          <li class="menu__link">Photo</li>
+          <li class="menu__link">Video</li>
+        </ul>
+      </nav>
+    </header>
   </body>
 </html>

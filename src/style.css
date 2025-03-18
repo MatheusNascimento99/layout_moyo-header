@@ -1,3 +1,56 @@
+html {
+  font-family: Robot, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 body {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+.header {
+  border: dashed red 2px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40;
+  height: 40;
+  margin: 10px 0 10px 50px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-left: 419;
+  padding: 0;
+  border: dashed blue 2px;
+}
+
+.menu__link {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  list-style: none;
+  height: 60px;
+
+  border: dashed green 1px;
+}
+
+.menu__link:not(:first-child, :last-child) {
+  color: gold;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.menu__link:first-child {
+  margin-right: 10px;
+}
+
+.menu__link:last-child {
+  margin-left: 10px;
 }
