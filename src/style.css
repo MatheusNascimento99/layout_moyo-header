@@ -1,5 +1,5 @@
 html {
-  font-family: Robot, sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-style: normal;
 }
@@ -10,39 +10,48 @@ body {
   padding: 0;
 }
 
+:root {
+  --blue: #00acdc;
+  --black: #000;
+}
+
 .header {
-  border: dashed red 2px;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .logo {
   width: 40;
   height: 40;
-  margin: 10px 0 10px 50px;
+  margin: 5px 0 5px 50px;
 }
 
 .menu {
   display: flex;
   align-items: center;
-  margin-left: 419;
+  margin: 0 0 0 414px;
   padding: 0;
-  border: dashed blue 2px;
+}
+
+.menu__list {
+  list-style: none;
 }
 
 .menu__link {
+  position: relative;
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
   font-size: 12px;
-  list-style: none;
   height: 60px;
-
-  border: dashed green 1px;
+  padding: 0;
 }
 
 .menu__link:not(:first-child, :last-child) {
-  color: gold;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -53,4 +62,24 @@ body {
 
 .menu__link:last-child {
   margin-left: 10px;
+}
+
+.is-active {
+  color: var(--blue);
+}
+
+.is-active::after {
+  content: '';
+  display: block;
+  width: 37px;
+  height: 4px;
+  background-color: var(--blue);
+  border-radius: 8px;
+  margin-top: 4px;
+  position: absolute;
+  top: 56px;
+}
+
+[data-qa='hover']:hover {
+  color: var(--blue);
 }
