@@ -31,14 +31,14 @@ body {
   margin: 10px 0 10px 50px;
 }
 
-.menu {
+.menu__list {
   display: flex;
   align-items: center;
   margin: 0 0 0 414px;
   padding: 0;
 }
 
-.menu__list {
+.menu__item {
   list-style: none;
 }
 
