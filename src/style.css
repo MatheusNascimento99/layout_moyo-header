@@ -1,7 +1,7 @@
 html {
   font-family: Roboto, sans-serif;
   font-weight: 500;
-  font-style: normal;
+  font-size: 12px;
 }
 
 body {
@@ -21,10 +21,14 @@ body {
   width: 100%;
 }
 
+.header__link__image {
+  height: 60px;
+}
+
 .logo {
   width: 40;
   height: 40;
-  margin: 5px 0 5px 50px;
+  margin: 10px 0 10px 50px;
 }
 
 .menu {
@@ -45,15 +49,13 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--black);
-  font-weight: 500;
-  font-size: 12px;
   height: 60px;
   padding: 0;
+  white-space: nowrap;
 }
 
 .menu__link:not(:first-child, :last-child) {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px;
 }
 
 .menu__link:first-child {
@@ -71,13 +73,12 @@ body {
 .is-active::after {
   content: '';
   display: block;
-  width: 37px;
+  width: 100%;
   height: 4px;
   background-color: var(--blue);
   border-radius: 8px;
-  margin-top: 4px;
   position: absolute;
-  top: 56px;
+  bottom: 0;
 }
 
 [data-qa='hover']:hover {
