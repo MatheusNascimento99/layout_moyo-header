@@ -24,25 +24,31 @@ body {
 }
 
 .logo {
+<<<<<<< HEAD
   margin: 10px 0 0 50px;
+=======
+  width: 40px;
+  height: 40px;
+  margin: 10px 0 10px 50px;
+>>>>>>> c4e99f0c639a8fd99b23435993e2a4ffea114d83
 }
 
-.menu {
+.menu__list {
   display: flex;
   align-items: center;
   margin-right: 50px;
   padding: 0;
 }
 
-.menu__list {
+.menu__item {
   list-style: none;
 }
 
 .menu__link {
+  text-transform: uppercase;
   position: relative;
   display: flex;
   align-items: center;
-  text-transform: uppercase;
   text-decoration: none;
   color: var(--black);
   height: 60px;
