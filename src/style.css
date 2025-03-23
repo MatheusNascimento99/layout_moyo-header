@@ -5,6 +5,7 @@ html {
 
   --blue: #00acdc;
   --black: #000;
+  --height-default: 60px;
 }
 
 body {
@@ -20,28 +21,24 @@ body {
 }
 
 .header__link__image {
-  height: 60px;
+  margin: 0;
 }
 
 .logo {
-<<<<<<< HEAD
   margin: 10px 0 0 50px;
-=======
-  width: 40px;
-  height: 40px;
-  margin: 10px 0 10px 50px;
->>>>>>> c4e99f0c639a8fd99b23435993e2a4ffea114d83
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0 50px 0 0;
 }
 
 .menu__list {
   display: flex;
   align-items: center;
-  margin-right: 50px;
   padding: 0;
-}
-
-.menu__item {
-  list-style: none;
+  height: var(--height-default);
 }
 
 .menu__link {
@@ -51,7 +48,7 @@ body {
   align-items: center;
   text-decoration: none;
   color: var(--black);
-  height: 60px;
+  height: var(--height-default);
   padding: 0;
   white-space: nowrap;
   margin-right: 20px;
