@@ -20,7 +20,7 @@ body {
   width: 100%;
 }
 
-.header__link__image {
+.header__link-image {
   margin: 0;
 }
 
@@ -31,10 +31,10 @@ body {
 .menu {
   display: flex;
   padding: 0;
-  margin: 0 50px 0 0;
+  margin: 0;
 }
 
-.menu__list {
+.menu__iten {
   display: flex;
   align-items: center;
   padding: 0;
@@ -54,7 +54,7 @@ body {
   margin-right: 20px;
 }
 
-.menu__list:last-child .menu__link {
+.menu__iten:last-child .menu__link {
   margin-right: 0;
 }
 
