@@ -17,8 +17,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  padding-inline: 48px;
+  padding-inline: 50px;
 }
 
 .header__link-image {
