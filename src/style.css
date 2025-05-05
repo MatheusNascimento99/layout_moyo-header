@@ -55,6 +55,10 @@
   margin-right: 20px;
 }
 
+.menu__link:hover{
+  color: var(--blue);
+}
+
 .menu__iten:last-child .menu__link {
   margin-right: 0;
 }
